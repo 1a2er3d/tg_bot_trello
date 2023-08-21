@@ -19,6 +19,7 @@ if (isset($update['action'])) {
 
             $cardName = $update['action']['data']['card']['name'];
             $messagebot = "Карточка '".$cardName."' була переміщена з {$listBefore} до {$listAfter}";
+            /* Можливо тут треба було зробити записи в базу */
 
             $id = $id_group;
             sendMessage();
